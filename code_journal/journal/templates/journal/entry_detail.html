@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ entry.title }}</title>
+	<link rel="stylesheet" type="text/css" href="">
+</head>
+<body>
+	<!-- Content goes here -->
+	 <div>
+		 <h2>{{ entry.title }}</h2>
+		 <h5>By {{ entry.author }} on {{ entry.published_date }}</h5>
+		 <p>{{ entry.text | linebreaks }}</p>
+		 <p>Skills Used: {{ entry.skills }}</p>
+		 <p>Resources: {{ entry.resources }}</p>
+    </div>
+</body>
+</html>

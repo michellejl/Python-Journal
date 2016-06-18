@@ -9,7 +9,7 @@
     <h1>Michelle's Python Journal</h1>
     <div>
         {% for entry in entries %}
-            <h2>{{ entry.title }}</h2>
+            <h2><a href="{% url 'journal:entry_detail' pk=entry.pk %}">{{ entry.title }}</a></h2>
             <h5>By {{ entry.author }} on {{ entry.published_date }}</h5>
             <p>{{ entry.text | linebreaks }}</p>
         {% endfor %}
